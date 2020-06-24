@@ -57,6 +57,7 @@ export default class MainContent extends React.Component {
         let targetArr = [...this.state.data]
         targetArr = targetArr.map((item,idx)=>idx==index?[this.state.editText,item[1],false]:item)
         this.setState({data:targetArr})
+        this.setState({editText:""})
     }
     render() {
         return (
